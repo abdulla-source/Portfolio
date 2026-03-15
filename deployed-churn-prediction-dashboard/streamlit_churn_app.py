@@ -6,7 +6,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Bank Customer Churn Risk Dashboard", page_icon="📉", layout="wide")
 
-MODEL_PATH = Path("churn_model.pkl")
+MODEL_PATH = Path(__file__).parent / "churn_model.pkl"
 
 st.markdown(
     """
