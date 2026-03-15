@@ -14,6 +14,12 @@ The app allows a user to:
 - see likely churn drivers
 - get suggested retention actions
 
+## Live Demo
+
+Try the deployed application:
+
+https://portfolio-mpkt2duffsuxgzl5jhtxoy.streamlit.app
+
 ## Features
 
 - End-to-end churn prediction workflow
