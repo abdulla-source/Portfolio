@@ -1,6 +1,11 @@
 # Machine Learning Portfolio
 
-This repository contains machine learning and data science projects I have worked on while studying Artificial Intelligence.
+Welcome to my machine learning portfolio.  
+This repository contains projects I have developed while studying Artificial Intelligence and Machine Learning.
+
+My work focuses on building practical machine learning pipelines including data analysis, feature engineering, model training, and evaluation.
+
+---
 
 ## Projects
 
@@ -8,21 +13,71 @@ This repository contains machine learning and data science projects I have worke
 
 A machine learning model that predicts whether a bank customer will leave the bank.
 
-Tech stack:
+This project includes:
+
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Data Preprocessing
+- CatBoost Model Training
+- Feature Importance Analysis
+- Prediction on unseen data
+
+Key features used in the model:
+
+- Customer age
+- Number of bank products
+- Customer engagement score
+- Account balance
+- Geography
+
+Model:
+
+**CatBoostClassifier**
+
+Evaluation metric:
+
+**ROC-AUC**
+
+Project files:
+
+```
+customer-churn-prediction/
+├ customer_churn.ipynb
+└ README.md
+```
+
+---
+
+## Technologies Used
+
 - Python
 - Pandas
+- NumPy
 - Seaborn
-- CatBoost
+- Matplotlib
 - Scikit-learn
+- CatBoost
 
-Key steps:
-- Exploratory Data Analysis
-- Feature Engineering
-- Model Training
-- Feature Importance Analysis
+---
 
-Model performance:
-- ROC-AUC: ~0.89
+## About Me
 
-Notebook:
-customer-churn-prediction/churn_model.ipynb
+I am an Artificial Intelligence student interested in:
+
+- Machine Learning
+- Data Science
+- Deep Learning
+- Artificial Intelligence research
+
+I am currently building projects to strengthen my practical ML engineering skills.
+
+---
+
+## Future Projects
+
+Planned projects for this portfolio:
+
+- Fraud Detection System
+- Recommendation System
+- NLP Project for Uzbek Language
+- Deep Learning Image Classifier
