@@ -1,3 +1,5 @@
+pip install shap
+
 import joblib
 from pathlib import Path
 
