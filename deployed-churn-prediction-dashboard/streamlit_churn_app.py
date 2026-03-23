@@ -130,7 +130,7 @@ def load_model():
     return joblib.load(MODEL_PATH)
 
 @st.cache_resource
-def load_explainer(model):
+def load_explainer(_model):
     return shap.TreeExplainer(model)
 
 def make_features(raw: dict) -> pd.DataFrame:
