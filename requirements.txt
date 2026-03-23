@@ -2,5 +2,6 @@ pandas
 numpy
 matplotlib
 seaborn
+shap
 scikit-learn
 catboost
