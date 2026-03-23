@@ -56,12 +56,73 @@ st.markdown(
         color: #9ca3af;
         font-size: 0.92rem;
     }
+    .sidebar-profile {
+        text-align: center;
+        padding: 1rem 0.5rem 1.5rem 0.5rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        margin-bottom: 1rem;
+    }
+    .sidebar-profile h3 {
+        margin: 0.5rem 0 0.25rem 0;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .sidebar-profile p {
+        font-size: 0.82rem;
+        color: #9ca3af;
+        margin: 0 0 0.75rem 0;
+    }
+    .sidebar-link {
+        display: inline-block;
+        margin: 0.2rem 0.25rem;
+        padding: 0.3rem 0.75rem;
+        border-radius: 8px;
+        border: 1px solid rgba(255,255,255,0.15);
+        font-size: 0.82rem;
+        text-decoration: none;
+        color: inherit;
+    }
+    .sidebar-link:hover {
+        background: rgba(255,255,255,0.05);
+    }
     </style>
     """,
     unsafe_allow_html=True,
 )
 
 
+# ── Sidebar: author profile ──────────────────────────────────────────────────
+with st.sidebar:
+    st.markdown(
+        """
+        <div class="sidebar-profile">
+            <div style="font-size:2.2rem;">👤</div>
+            <h3>Rustamov Abdulla</h3>
+            <p>Data Science Portfolio Project</p>
+            <a class="sidebar-link" href="https://www.linkedin.com/in/abdulla-rustamov-955631387" target="_blank">
+                🔗 LinkedIn
+            </a>
+            <a class="sidebar-link" href="https://github.com/abdulla-source" target="_blank">
+                💻 GitHub
+            </a>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.markdown(
+        """
+        **About this app**
+
+        Enter a customer's profile to instantly predict their churn probability
+        and receive actionable retention recommendations.
+
+        Model: **CatBoost Classifier**  
+        Metric: **ROC-AUC 0.934** (validation)
+        """,
+    )
+
+
+# ── Model loading ────────────────────────────────────────────────────────────
 @st.cache_resource
 def load_model():
     if not MODEL_PATH.exists():
@@ -208,6 +269,7 @@ def set_profile(profile_name: str):
 
 model = load_model()
 
+# ── Hero banner ──────────────────────────────────────────────────────────────
 st.markdown(
     """
     <div class="hero-card">
