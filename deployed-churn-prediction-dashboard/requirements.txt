@@ -4,5 +4,6 @@ streamlit
 pandas
 numpy
 scikit-learn
+shap
 catboost
 joblib
